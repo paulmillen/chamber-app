@@ -1,65 +1,19 @@
 import { 
-  INCREMENT_REQUESTED,
-  INCREMENT,
-  DECREMENT_REQUESTED,
-  DECREMENT
+  ADD_USER,
 } from '../modules/constants';
 
-const increment = () => {
+const addUser = (id, name, instrument, location) => {
   return dispatch => {
     dispatch({
-      type: INCREMENT_REQUESTED
+      type: ADD_USER,
+      id,
+      name,
+      instrument,
+      location
     })
-
-    dispatch({
-      type: INCREMENT
-    })
-  }
-}
-
-const incrementAsync = () => {
-  return dispatch => {
-    dispatch({
-      type: INCREMENT_REQUESTED
-    })
-
-    return setTimeout(() => {
-      dispatch({
-        type: INCREMENT
-      })
-    }, 3000)
-  }
-}
-
-const decrement = () => {
-  return dispatch => {
-    dispatch({
-      type: DECREMENT_REQUESTED
-    })
-
-    dispatch({
-      type: DECREMENT
-    })
-  }
-}
-
-const decrementAsync = () => {
-  return dispatch => {
-    dispatch({
-      type: DECREMENT_REQUESTED
-    })
-
-    return setTimeout(() => {
-      dispatch({
-        type: DECREMENT
-      })
-    }, 3000)
   }
 }
 
 export {
-	increment,
-	incrementAsync,
-	decrement,
-	decrementAsync
+	addUser,
 }

@@ -12,7 +12,7 @@ const Index = () => (
 
     <main>
       <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
+      <Route exact path="/about" component={About} />
     </main>
   </div>
 )
