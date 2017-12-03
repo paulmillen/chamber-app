@@ -2,8 +2,6 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import UserList from './UserList';
-
 import {
 	addUser,
 } from '../actions/actionCreators'
@@ -41,7 +39,6 @@ class Home extends React.Component {
 					<input type='text' ref='location' placeholder='location'/>
 					<button type='submit'>Submit</button>
 				</form>
-				<UserList users={this.state.users} />
 			</div>
 		);
 	};
