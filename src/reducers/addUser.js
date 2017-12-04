@@ -4,7 +4,7 @@ import {
 
 const initialState = {
   users: []
-};
+}
 
 const addUser = (state = initialState, action) => {
   switch (action.type) {

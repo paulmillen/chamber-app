@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
-import store, { history } from './store';
+import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'react-router-redux'
+import store, { history } from './store'
 
-import Index from './containers/Index';
+import Index from './containers/Index'
 
-import 'normalize.css/normalize.css';
-import './index.css';
+import 'normalize.css/normalize.css'
+import './index.css'
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById('root')
 
 const rootComponents = (
 	<Provider store={store}>
@@ -22,4 +22,4 @@ const rootComponents = (
 	</Provider>
 );
 
-ReactDOM.render(rootComponents, rootElement);
+ReactDOM.render(rootComponents, rootElement)
