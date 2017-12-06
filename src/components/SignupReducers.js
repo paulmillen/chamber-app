@@ -26,4 +26,6 @@ const addUser = (state = initialState, action) => {
   }
 }
 
-export default addUser
+export {
+  addUser
+}

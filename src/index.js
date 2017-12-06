@@ -1,25 +1,23 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { Route, Link } from 'react-router-dom'
+import Home from './containers/Home'
+import About from './containers/About'
+import Signup from './components/Signup'
 
-import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'react-router-redux'
-import store, { history } from './store'
+const Index = () => (
+  <div>
+    <header>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/signup">Signup</Link>
+    </header>
 
-import Index from './containers/Index'
+    <main>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/signup" component={Signup} />
+    </main>
+  </div>
+)
 
-import 'normalize.css/normalize.css'
-import './index.css'
-
-const rootElement = document.getElementById('root')
-
-const rootComponents = (
-	<Provider store={store}>
-		<ConnectedRouter history={history}>
-			<div>
-				<Index />
-			</div>
-		</ConnectedRouter>
-	</Provider>
-);
-
-ReactDOM.render(rootComponents, rootElement)
+export default Index

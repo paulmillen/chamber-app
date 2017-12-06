@@ -2,11 +2,11 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
-import { addUser } from '../actions/actionCreators'
+import { addUser } from './SignupActions'
 
 class Signup extends React.Component {
 	state = { 
-		submission: undefined 
+		submission: undefined
 	}
 
 	handleSubmit = e => {
