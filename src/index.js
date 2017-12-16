@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-import Home from './containers/Home'
-import About from './containers/About'
-import Signup from './components/Signup'
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Signup from './components/Signup/Signup'
 
 const Index = () => (
   <div>

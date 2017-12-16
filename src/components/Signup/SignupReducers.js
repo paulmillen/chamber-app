@@ -1,6 +1,6 @@
 import { 
   ADD_USER,
-} from '../modules/constants'
+} from '../../modules/constants'
 
 const initialState = {
   users: []

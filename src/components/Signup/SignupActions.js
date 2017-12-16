@@ -1,6 +1,6 @@
 import { 
   ADD_USER,
-} from '../modules/constants'
+} from '../../modules/constants'
 
 const addUser = (id, name, instrument, location) => {
   return dispatch => {
